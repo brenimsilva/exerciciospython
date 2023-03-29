@@ -20,3 +20,28 @@ resultado = calc.multiplicar(24,33);
 calc.somar(1,5);
 
 ####################################################################
+
+class Televisao:
+    def __init__(self) -> None:
+        self.ligada = False;
+        self.canal = 0; 
+    
+    def mudarCanalPracima(self):
+        self.canal += 1;
+        print(f"O Canal foi mudado para {self.canal}");
+    
+    def mudarCanalPraBaixo(self):
+        self.canal -= 1;
+        if(self.canal <= 0):
+            self.canal = 0;
+        print(f"O canal foi mudado para {self.canal}");
+    
+    def ligarDesligarTelevisao(self):
+        self.ligada = not self.ligada;
+        print(f"A televisao esta {'ligada' if self.ligada else 'desligada'}")
+
+televisao = Televisao();
+televisao.mudarCanalPraBaixo()
+televisao.mudarCanalPracima()
+televisao.ligarDesligarTelevisao();
+televisao.ligarDesligarTelevisao();
