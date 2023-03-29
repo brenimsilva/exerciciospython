@@ -41,7 +41,7 @@ class Televisao:
         print(f"A televisao esta {'ligada' if self.ligada else 'desligada'}")
 
 televisao = Televisao();
-televisao.mudarCanalPraBaixo()
-televisao.mudarCanalPracima()
+televisao.mudarCanalPraBaixo();
+televisao.mudarCanalPracima();
 televisao.ligarDesligarTelevisao();
 televisao.ligarDesligarTelevisao();
